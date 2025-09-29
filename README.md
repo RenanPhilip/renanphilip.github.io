@@ -1,2 +1,2 @@
 # renanphilip.github.io
-[Curriculo:](https://renanphilip.github.io/RenanPhilip/)
+[Curriculo: Renan Philipe](https://renanphilip.github.io/RenanPhilip/)
