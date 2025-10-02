@@ -27,15 +27,15 @@
     alt="GitHub Stats" 
     height="200" 
     style="padding-right: 10px;"
-      alt="GitHub Stats" 
-      src="https://github-readme-stats.vercel.app/api?username=RenanPhilip&show_icons=true&theme=tokyonight&locale=pt-br" 
+    alt="GitHub Stats" 
+    src="https://github-readme-stats.vercel.app/api?username=RenanPhilip&show_icons=true&theme=tokyonight&locale=pt-br" 
   />
   <img 
-      align="left" 
+    align="left" 
     alt="GitHub Stats" 
     height="200" 
     style="padding-right: 10px;"
-      alt="Top Langs" 
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=RenanPhilip&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9" 
+    alt="Top Langs" 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=RenanPhilip&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9" 
   />
 </div>
