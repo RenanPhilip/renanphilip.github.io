@@ -14,7 +14,8 @@
 * [Linkedin](https://www.linkedin.com/in/renanph/)
 * [Salesforce Trailblazer](https://www.salesforce.com/trailblazer/renanph)
 * [WhatsApp](https://wa.me/11981073893)
-* [Email](mailto:rphiliper@gmail.com)
+* [Email](mailto:rphiliper@gmail.com)  
+
 ### 📊 Estatísticas GitHub
 <div class="stats-container">
   <img 
