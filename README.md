@@ -9,12 +9,16 @@
     Minha experiência inclui liderar migrações para GA4, padronizar arquiteturas de tagueamento complexas e integrar dados entre Marketing, BI e Produto, sempre garantindo governança, precisão e eficiência.
 </p>
 
-* [Curriculo: Renan Philipe](https://renanphilip.github.io/RenanPhilip/)
+##  Plataformas e Contatos
+
+* [Curriculo](https://renanphilip.github.io/RenanPhilip/)
 * [Portifólio](https://renanphilip.github.io/)
 * [Linkedin](https://www.linkedin.com/in/renanph/)
 * [Salesforce Trailblazer](https://www.salesforce.com/trailblazer/renanph)
 * [WhatsApp](https://wa.me/11981073893)
 * [Email](mailto:rphiliper@gmail.com)  
+
+---
 
 ### 📊 Estatísticas GitHub
 <div class="stats-container">
