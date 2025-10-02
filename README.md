@@ -18,8 +18,6 @@
 * [WhatsApp](https://wa.me/11981073893)
 * [Email](mailto:rphiliper@gmail.com)  
 
-<br><br>
-
 ### 📊 Estatísticas GitHub
 <div class="stats-container">
   <img 
