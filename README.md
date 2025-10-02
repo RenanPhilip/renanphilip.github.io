@@ -16,7 +16,7 @@
 * [Github Profile](https://github.com/RenanPhilip/)  
 * [Linkedin](https://www.linkedin.com/in/renanph/)
 * [Salesforce Trailblazer](https://www.salesforce.com/trailblazer/renanph)
-* [WhatsApp](https://wa.me/+5511981073893)
+* [WhatsApp](https://wa.me/+5511981073893?text=Ol%c3%a1+Renan%2c+tudo+bem%3f+Verifiquei+sua+p%c3%a1gina+no+GitHub.)
 * [Email](mailto:rphiliper@gmail.com)  
 
 ### 📊 Estatísticas GitHub
