@@ -13,6 +13,7 @@
 
 * [Curriculo](https://renanphilip.github.io/RenanPhilip/)
 * [Portifólio](https://renanphilip.github.io/)
+* [Github Profile](https://github.com/RenanPhilip/)  
 * [Linkedin](https://www.linkedin.com/in/renanph/)
 * [Salesforce Trailblazer](https://www.salesforce.com/trailblazer/renanph)
 * [WhatsApp](https://wa.me/11981073893)
