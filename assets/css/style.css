@@ -1,86 +1,124 @@
+/* ---------- Reset ---------- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+
+/* ---------- Base ---------- */
 body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  margin: 0;
-  padding: 0;
-  color: #333;
+  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #0f172a; /* fundo escuro */
+  color: #e2e8f0;      /* texto claro */
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 40px 20px;
 }
 
+/* ---------- Container ---------- */
 .container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+  background: #1e293b;  /* caixa mais clara que o fundo */
+  border-radius: 12px;
+  padding: 36px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  position: relative;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 30px;
+/* ---------- Cabeçalho ---------- */
+header { text-align: center; margin-bottom: 28px; }
+header h1 {
+  font-size: 2.3rem;
+  color: #60a5fa; /* azul claro */
+  /* margin-bottom: 10px; */
+}
+header h3 {
+  color: #94a3b8;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+/* ---------- Seções ---------- */
+.resumo h2, .contatos h2, .estatisticas h2 {
+  font-size: 1.1rem;
+  color: #38bdf8; /* ciano */
+  margin-bottom: 1%;
+  margin-top: 1%;
 }
-
-h2 {
-  margin-top: 20px;
-  color: #222;
-}
-
-h3 {
-  color: #555;
-}
-
 .resumo p {
+  color: #cbd5e1;
+  font-size: 1rem;
   text-align: justify;
 }
 
-.contatos ul {
-  list-style: none;
-  padding: 0;
+/* ---------- Contatos ---------- */
+.contatos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
 }
 
-.contatos li {
-  margin: 8px 0;
-}
-
-.contatos a {
-  color: #1e90ff;
+.contatos-grid a {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: #334155;
+  color: #e2e8f0;
+  font-weight: 600;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: transform .3s ease, background .3s ease;
+}
+.contatos-grid a:hover {
+  background: #475569;
+  transform: translateY(-5px) scale(1.05);
 }
 
+.contatos ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 16px;
+  list-style: none;
+  margin-top: 8px;
+}
+.contatos a {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #334155;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background .2s ease, transform .2s ease;
+}
 .contatos a:hover {
-  color: #0056b3;
+  background: #475569;
+  transform: translateY(-3px);
 }
 
+/* ---------- Estatísticas ---------- */
 .stats-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 18px;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 16px;
 }
-
 .stats-container img {
   height: 200px;
+  max-width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.6);
+  object-fit: contain;
+  transition: transform .2s ease;
 }
+.stats-container img:hover { transform: translateY(-6px); }
 
-/* Link discreto canto superior direito */
-.top-right-link {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 14px;
-  color: #555;
-  text-decoration: none;
-  opacity: 0.7;
-}
-
-.top-right-link:hover {
-  opacity: 1;
-  color: #1e90ff;
+/* ---------- Responsivo ---------- */
+@media (max-width: 640px) {
+  body { padding: 18px 12px; }
+  .container { padding: 20px; border-radius: 8px; }
+  header h1 { font-size: 1.7rem; }
+  .stats-container img { height: 150px; }
 }

@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Renan Philipe - Portfólio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
   <div class="container">
+    
+    <!-- Cabeçalho -->
     <header>
       <h1>Renan Philipe Rocha Ribeiro</h1>
       <h3>Web Analytics | JavaScript | Google Tag Manager | Digital Analytics | Google Analytics | Google Ads</h3>
     </header>
 
+    <!-- Resumo -->
     <section class="resumo">
       <h2>Resumo</h2>
       <p>
@@ -21,32 +26,58 @@
       </p>
     </section>
 
+    <!-- Contatos com cards -->
     <section class="contatos">
       <h2>Plataformas e Contatos</h2>
-      <ul>
-        <li><a href="https://renanphilip.github.io/RenanPhilip/">Currículo</a></li>
-        <li><a href="https://renanphilip.github.io/">Portfólio</a></li>
-        <li><a href="https://github.com/RenanPhilip/">GitHub Profile</a></li>
-        <li><a href="https://www.linkedin.com/in/renanph/">LinkedIn</a></li>
-        <li><a href="https://www.salesforce.com/trailblazer/renanph">Salesforce Trailblazer</a></li>
-        <li><a href="https://wa.me/11981073893">WhatsApp</a></li>
-        <li><a href="mailto:rphiliper@gmail.com">Email</a></li>
-      </ul>
+      <div class="contatos-grid">
+        <a href="https://renanphilip.github.io/RenanPhilip/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-address-card"></i>
+            Currículo
+        </a>
+        <a href="https://renanphilip.github.io/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-file"></i>
+            Portfólio
+        </a>
+        <a href="https://github.com/RenanPhilip/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/renanph/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn
+        </a>
+        <a href="https://www.salesforce.com/trailblazer/renanph" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-salesforce"></i>
+            Salesforce
+        </a>
+        <a href="https://wa.me/11981073893" target="_blank" rel="noopener noreferrer">
+            <!-- <i class="fa-brands fa-square-whatsapp"></i> -->
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+        </a>
+        <a href="mailto:rphiliper@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <!-- <i class="fa-regular fa-envelope"></i> -->
+            Email
+        </a>
+      </div>
     </section>
 
+    <!-- Estatísticas GitHub -->
     <section class="estatisticas">
       <h2>📊 Estatísticas GitHub</h2>
       <div class="stats-container">
         <img 
-          alt="GitHub Stats"
           src="https://github-readme-stats.vercel.app/api?username=RenanPhilip&show_icons=true&theme=tokyonight&locale=pt-br" 
+          alt="GitHub Stats"
         />
         <img 
-          alt="Top Langs"
           src="https://github-readme-stats.vercel.app/api/top-langs/?username=RenanPhilip&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9" 
+          alt="Top Langs"
         />
       </div>
     </section>
+
   </div>
 
   <script src="assets/javascript/script.js"></script>
