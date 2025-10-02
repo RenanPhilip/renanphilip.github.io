@@ -1,0 +1,84 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+  background: #0d1117; /* estilo GitHub dark */
+  color: #e6edf3;
+  line-height: 1.6;
+  font-size: 16px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Cabeçalho */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #58a6ff;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #8b949e;
+  margin-bottom: 20px;
+}
+
+/* Resumo */
+p {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  font-size: 1.1rem;
+  color: #c9d1d9;
+}
+
+/* Links principais */
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #58a6ff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #1f6feb;
+}
+
+/* Lista de links */
+ul {
+  margin-bottom: 30px;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.1rem;
+}
+
+/* Estatísticas GitHub */
+.stats-container {
+  display: flex;
+  justify-content: center; /* centraliza no meio da tela */
+  gap: 20px;              /* espaço entre as imagens */
+  flex-wrap: wrap;        /* permite quebrar em telas pequenas */
+  margin-top: 20px;
+}
+
+.stats-container img {
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
