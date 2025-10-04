@@ -58,9 +58,7 @@ addElement("certificacoes", "certificacoes-container");
 addElement("experiencia", "experiencia-section");
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const e = document.querySelector("#nome");
+  const alvo = document.querySelector("#nome");
   if (alvo) {
-    e.scrollIntoView({ behavior: "smooth", block: "start" });
+    alvo.scrollIntoView({ behavior: "smooth", block: "start" });
   }
-});
