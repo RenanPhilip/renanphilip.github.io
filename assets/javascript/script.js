@@ -59,9 +59,8 @@ addElement("experiencia", "experiencia-section");
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Espera a página carregar e rola até o fim suavemente
-  window.scrollTo({
-    top: document.body.scrollHeight,
-    behavior: "smooth"
-  });
+  const e = document.querySelector("#nome");
+  if (alvo) {
+    e.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 });
