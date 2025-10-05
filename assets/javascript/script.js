@@ -65,9 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Name Smooth
-document.addEventListener("DOMContentLoaded", () => {
-    const alvo = document.querySelector("#nome");
-    if (alvo) {
-        alvo.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+window.addEventListener("load", () => {
+  console.log("Página totalmente carregada");
+  const alvo = document.querySelector("#nome");
+  if (alvo) {
+    alvo.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 });
