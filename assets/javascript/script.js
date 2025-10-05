@@ -1,41 +1,41 @@
-function addElement(idCatch, idInsert) {
-    fetch("https://raw.githubusercontent.com/RenanPhilip/RenanPhilip/main/index.html")
-        .then(r => r.text())
-        .then(html => {
-            const temp = document.createElement("div");
-            temp.innerHTML = html;
+async function addElement(idCatch, idInsert) {
+  try {
+    const r = await fetch("https://raw.githubusercontent.com/RenanPhilip/RenanPhilip/main/index.html");
+    const html = await r.text();
+    const temp = document.createElement("div");
+    temp.innerHTML = html;
 
-            // pega a div/elemento que você quer capturar
-            const captured = temp.querySelector(`#${idCatch}`);
+    const captured = temp.querySelector(`#${idCatch}`);
+    const insert = document.getElementById(idInsert);
 
-            if (captured) {
-                document.getElementById(idInsert).innerHTML = captured.innerHTML;
-            } else {
-                document.getElementById(idInsert).innerText = `Elemento "${idCatch}" não encontrado.`;
-            }
-        })
-        .catch(err => {
-            console.error(`Erro ao carregar elemento "${idCatch}":`, err);
-            document.getElementById(idInsert).innerText = "Erro ao carregar.";
-        });
+    if (captured && insert) insert.innerHTML = captured.innerHTML;
+    else if (insert) insert.innerText = `Elemento "${idCatch}" não encontrado.`;
+
+  } catch (err) {
+    console.error(`Erro ao carregar "${idCatch}":`, err);
+    const insert = document.getElementById(idInsert);
+    if (insert) insert.innerText = "Erro ao carregar.";
+  }
 }
 
+// ✅ agrupa os fetches e espera todos terminarem
+const elementos = [
+  ['navbar', 'navbar'],
+  ['menu', 'contatos-grid'],
+  ["nome", "nome"],
+  ["especialidade", "especialidade"],
+  ["headline", "headline"],
+  ["resumo-curriculo", "resumo"],
+  ["certificacoes", "certificacoes-container"],
+  ["experiencia", "experiencia-section"]
+];
 
-// Exemplo de uso:
-// addElement("header","header")
-// Nome
-addElement("nome", "nome");
-addElement("skill-tools","skill-tools")
-// Resumo Headline
-addElement("headline", "headline");
-// Resumo 
-addElement("resumo-curriculo", "resumo");
-// Resumo 
-// addElement("resumo", "resumo");
-
-addElement("certificacoes", "certificacoes-container");
-addElement("experiencia", "experiencia-section");
-
+Promise.all(elementos.map(([a, b]) => addElement(a, b)))
+  .then(() => {
+    console.log("Todos os elementos carregados.");
+    const alvo = document.querySelector("#nome");
+    if (alvo) alvo.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 
 // Navbar Toggle
 document.addEventListener("DOMContentLoaded", () => {
@@ -66,9 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Name Smooth
 window.addEventListener("load", () => {
-  console.log("Página totalmente carregada");
-  const alvo = document.querySelector("#nome");
-  if (alvo) {
-    alvo.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
+    console.log('window load')
+    const alvo = document.querySelector("#nome");
+    if (alvo) {
+        alvo.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
 });
