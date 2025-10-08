@@ -1,94 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Renan Philipe - Portfólio</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renan Philipe - Portfólio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-
-<body>
-<!-- Navbar -->
-<header id="navbar" class="navbar"></header>
-
-
-  <div class="container">
-    <!-- Cabeçalho -->
-    <header id="header">
-      <h1 id="nome"></h1>
-      <h3 id="especialidade"></h3>
-      <!-- <h1>Renan Philipe Rocha Ribeiro</h1>
-      <h3>Web Analytics | JavaScript | Google Tag Manager | Digital Analytics | Google Analytics | Google Ads</h3> -->
-    </header>
-    <!-- Resumo -->
-    <section id="resumo" class="resumo">
-      <!-- <h2>Resumo</h2>
-      <p>
-        Sou especialista em Web Analytics e Data Tracking, com mais de 8 anos ajudando empresas enterprise a transformar
-        dados em decisões estratégicas.
-        Minha experiência inclui liderar migrações para GA4, padronizar arquiteturas de tagueamento complexas e integrar
-        dados entre Marketing, BI e Produto, sempre garantindo governança, precisão e eficiência.
-      </p> -->
-    </section>
-
-    <!-- Contatos com cards -->
-    <section class="contatos">
-      <h2>Plataformas e Contatos</h2>
-      <div class="contatos-grid" id="contatos-grid"></div>
-      <!-- <div class="contatos-grid">
-        <a href="https://renanphilip.github.io/RenanPhilip/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-solid fa-address-card"></i>
-          Currículo
-        </a>
-        <a href="https://renanphilip.github.io/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-solid fa-file"></i>
-          Portfólio
-        </a>
-        <a href="https://github.com/RenanPhilip/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-github"></i>
-          GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/renanph/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin"></i>
-          LinkedIn
-        </a>
-        <a href="https://www.salesforce.com/trailblazer/renanph" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-salesforce"></i>
-          Salesforce
-        </a>
-        <a href="https://wa.me/+5511981073893?text=Ol%c3%a1+Renan%2c+tudo+bem%3f+Verifiquei+sua+p%c3%a1gina+no+GitHub."
-          target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-whatsapp"></i>
-          WhatsApp
-        </a>
-        <a href="mailto:rphiliper@gmail.com">
-          <i class="fa-solid fa-envelope"></i>
-          Email
-        </a> -->
-      </div>
-    </section>
-
+  </head>
+  
+  <body>
+    <div class="container">
+      <!-- Cabeçalho -->
+      <header id="header">
+        <h1 id="nome"></h1>
+        <h3 id="especialidade"></h3>
+      </header>
+      <!-- Resumo -->
+      <section id="resumo" class="resumo"></section>
+      
+      <!-- Contatos com cards -->
+      <section class="contatos">
+        <h2>Plataformas e Contatos</h2>
+        <div class="contatos-grid" id="contatos-grid"></div></section>
+    
     <!-- Estatísticas GitHub -->
     <section class="estatisticas">
       <h2>📊 Estatísticas GitHub</h2>
       <div class="stats-container">
         <img
-          src="https://github-readme-stats.vercel.app/api?username=RenanPhilip&show_icons=true&theme=tokyonight&locale=pt-br"
-          alt="GitHub Stats" />
+        src="https://github-readme-stats.vercel.app/api?username=RenanPhilip&show_icons=true&theme=tokyonight&locale=pt-br"
+        alt="GitHub Stats" />
         <img
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=RenanPhilip&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9"
-          alt="Top Langs" />
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=RenanPhilip&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9"
+        alt="Top Langs" />
       </div>
     </section>
-
+    
   </div>
-
-  <script src="assets/javascript/script.js"></script>
-</body>
+  
+  <script src="assets/javascript/script.js" type="module"></script>
+  <script src="assets/javascript/call-navbar.js" type="module"></script>
+ </body>
 
 </html>
